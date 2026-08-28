@@ -1,0 +1,33 @@
+! =====================================================
+! R2 Configuration - Packet Tracer Static Routing Lab
+! =====================================================
+
+enable
+configure terminal
+
+hostname R2
+
+! --- Interface toward R1 ---
+interface GigabitEthernet0/0
+ ip address 192.168.12.2 255.255.255.0
+ no shutdown
+ exit
+
+! --- Interface toward R3 ---
+interface GigabitEthernet0/1
+ ip address 192.168.13.2 255.255.255.0
+ no shutdown
+ exit
+
+! --- Static routes to remote networks ---
+ip route 192.168.1.0 255.255.255.0 192.168.12.1
+ip route 192.168.3.0 255.255.255.0 192.168.13.3
+
+! --- Cosmetic / good practice ---
+no ip domain-lookup
+line con 0
+ logging synchronous
+ exit
+
+end
+write memory

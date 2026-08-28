@@ -1,0 +1,5 @@
+# PC1 Configuration (Desktop > IP Configuration)
+
+IP Address:      192.168.1.1
+Subnet Mask:      255.255.255.0
+Default Gateway:  192.168.1.254
