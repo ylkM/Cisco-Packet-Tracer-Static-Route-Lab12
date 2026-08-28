@@ -3,7 +3,6 @@
 A simple three-router Cisco Packet Tracer lab demonstrating static routing between two
 end-user LANs separated by two intermediate router hops.
 
-![Topology](topology/topology-diagram.png)
 
 ## Objectives
 
@@ -74,8 +73,4 @@ show run
 `show ip route` on each router should show the two static routes documented in
 `docs/routing-table.md`, marked with an `S` in the routing table.
 
-## Author / Notes
 
-This lab is a classic 3-router static routing exercise commonly used in CCNA-style
-practice labs. Feel free to fork and extend (e.g., convert to a dynamic routing protocol
-like RIP, EIGRP, or OSPF as a follow-up exercise).
